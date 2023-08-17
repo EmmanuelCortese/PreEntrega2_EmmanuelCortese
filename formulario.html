@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="shorcut icon" href="Imagenes/minicatino.gif"/>
+    <link rel="stylesheet" href="Styles/estilos.css">
+</head>
+<body>
+    <header>
+        <div><a class="logo-navbar" href="index.html"> <img src="Imagenes/ProjectLogo1.png"></a></div>
+    </header>
+    <section id="formulario"> 
+        <h1>REGISTRO</h1>
+        <form action="texto.text" method="post" enctype="text/plain">
+                <h2>Complete los siguientes campos:</h2>
+            <div>
+                <label for="User">Usuario:</label>
+                <input type="text" id="User" placeholder="Catino1" />
+            </div>
+            <div> 
+                <label for="Email">Email:</label>   
+                <input type="email" id="email" placeholder="catino@catino.com" />
+            </div>
+            <div>
+                <label for="Contraseña">Contraseña:</label>
+                <input type="password" id="Contraseña" placeholder="Catino123" />
+            <div>
+            <div>
+                <label for="Confirmar-contraseña">Confirmar Contraseña:</label>
+                <input type="password" id="Confirmar-contraseña" placeholder="Catino123" />
+            </div>
+            <div>
+                <div>Recordar Contraseña</div>
+                <input type="radio" name="recordar-contraseña" value="remember-password" />
+            </div>
+            <div>
+                <input type="submit" value="Enviar"/> 
+                <input type="reset"/>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
