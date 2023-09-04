@@ -1,0 +1,389 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url(./fuente/Quicksand-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Rampart One";
+  src: url(./fuente/RampartOne-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#formulario {
+  display: block;
+  font-family: "Quicksand";
+  text-align: center;
+  margin: 0px 790px 0px 820px;
+  background-color: rgb(252, 198, 99);
+  border-radius: 15px;
+  border: 1px solid yellow;
+  padding: 10px;
+}
+
+.logo-navbar {
+  display: flex;
+  justify-content: center;
+}
+
+#SobreCatino {
+  font-family: "Quicksand";
+  text-align: center;
+  background-color: rgb(252, 198, 99);
+  font-weight: bold;
+  display: grid;
+  grid-template-areas: ". catinos ." ". catino .";
+  grid-template-rows: 400px;
+}
+#SobreCatino .catinos {
+  grid-area: catinos;
+}
+#SobreCatino .catino {
+  grid-area: catino;
+}
+
+body {
+  background-color: orange;
+}
+body .container {
+  clear: both;
+  overflow: auto;
+  background-color: rgb(252, 198, 99);
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+
+nav {
+  float: left;
+}
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 30px;
+  font-family: rampart one;
+  margin-top: 55px;
+  padding-left: 50px;
+}
+nav ul li:hover {
+  color: greenyellow;
+}
+nav ul li a {
+  text-decoration: solid;
+  color: black;
+}
+nav ul li a:hover {
+  color: greenyellow;
+}
+
+.logo img {
+  float: left;
+  width: 150px;
+  margin-left: -20px;
+  margin-top: -15px;
+}
+
+p {
+  font-family: quicksand;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  background-color: orange;
+}
+
+#padre-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  font-family: rampart one;
+  margin-top: 30px;
+  background-color: rgb(252, 198, 99);
+  border: 1px solid yellow;
+  border-radius: 10px;
+}
+#padre-flex .bordes-redondeados {
+  border-radius: 8px;
+  border: 2px solid yellow;
+  width: 200px;
+  height: 315px;
+}
+
+#padre-flex-2 {
+  font-family: rampart one;
+  margin-top: 30px;
+  background-color: rgb(252, 198, 99);
+  border: 1px solid yellow;
+  border-radius: 10px;
+  padding: 15px;
+  display: grid;
+  grid-template-areas: ". anime . " "video-1 sinopsis-1 sinopsis-1" "sinopsis-2 sinopsis-2 video-2" "video-3 sinopsis-3 sinopsis-3" "sinopsis-4 sinopsis-4  video-4" "video-5 sinopsis-5 sinopsis-5";
+  grid-template-columns: 560px 920px 560px;
+}
+#padre-flex-2 h2 {
+  padding: 15px;
+}
+#padre-flex-2 .anime {
+  grid-area: anime;
+  display: flex;
+  justify-content: center;
+}
+#padre-flex-2 .video-1 {
+  grid-area: video-1;
+  width: 560px;
+  height: 315px;
+  border-radius: 8px;
+  border: 5px solid yellow;
+}
+#padre-flex-2 .sinopsis-1 {
+  grid-area: sinopsis-1;
+  margin-left: 30px;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#padre-flex-2 .video-2 {
+  grid-area: video-2;
+  width: 560px;
+  height: 315px;
+  border-radius: 8px;
+  border: 5px solid yellow;
+}
+#padre-flex-2 .sinopsis-2 {
+  grid-area: sinopsis-2;
+  margin-right: 30px;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#padre-flex-2 .video-3 {
+  grid-area: video-3;
+  width: 560px;
+  height: 315px;
+  border-radius: 8px;
+  border: 5px solid yellow;
+}
+#padre-flex-2 .sinopsis-3 {
+  grid-area: sinopsis-3;
+  margin-left: 30px;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#padre-flex-2 .video-4 {
+  grid-area: video-4;
+  width: 560px;
+  height: 315px;
+  border-radius: 8px;
+  border: 5px solid yellow;
+}
+#padre-flex-2 .sinopsis-4 {
+  grid-area: sinopsis-4;
+  margin-right: 30px;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#padre-flex-2 .video-5 {
+  grid-area: video-5;
+  width: 560px;
+  height: 315px;
+  border-radius: 8px;
+  border: 5px solid yellow;
+}
+#padre-flex-2 .sinopsis-5 {
+  grid-area: sinopsis-5;
+  margin-left: 30px;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer {
+  text-align: center;
+  font-family: quicksand;
+  display: grid;
+  grid-template-areas: ". item-1 item-2 ." "item-3 item-3 item-3 item-3" "item-4 item-4 item-4 item-4" "item-5 item-5 item-5 item-5";
+  grid-template-rows: 150px 80px 50px 50px;
+  border: 1px solid solid yellow;
+  border-radius: 10px;
+  background-color: rgb(252, 198, 99);
+  margin-top: 50px;
+}
+#footer a {
+  text-decoration: solid;
+  color: black;
+}
+#footer a:hover {
+  color: greenyellow;
+}
+#footer .item-1 {
+  grid-area: item-1;
+  justify-self: center;
+}
+#footer .item-2 {
+  grid-area: item-2;
+  justify-self: center;
+}
+#footer .item-3 {
+  grid-area: item-3;
+  justify-self: center;
+}
+#footer .item-4 {
+  grid-area: item-4;
+  justify-self: center;
+}
+#footer .item-5 {
+  grid-area: item-5;
+  justify-self: center;
+}
+
+.redes {
+  margin: 10px;
+  width: 50px;
+  border: 1px solid yellow;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    font-size: 28px;
+    margin: 5px;
+  }
+  .logo {
+    padding: 110px;
+    margin-top: -100px;
+  }
+  .bordes-redondeados {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    margin-top: 10px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+  }
+  .grid-item {
+    width: 100px;
+  }
+  h2 {
+    font-size: 8px;
+  }
+  h3 {
+    font-size: 8px;
+  }
+  h4 {
+    font-size: 8px;
+  }
+  .catino {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 330px;
+    margin-top: -250px;
+  }
+  .catinos img {
+    width: 380px;
+  }
+  #padre-flex-2 {
+    display: block;
+  }
+  .video-1 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .sinopsis-1 {
+    font-size: 100%;
+    margin: 5px 20px 30px 0px;
+  }
+  .video-2 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .sinopsis-2 {
+    font-size: 100%;
+    margin: 5px 20px 30px 0px;
+  }
+  .video-3 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .sinopsis-3 {
+    font-size: 100%;
+    margin: 5px 20px 30px 0px;
+  }
+  .video-4 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .sinopsis-4 {
+    font-size: 100%;
+    margin: 5px 20px 30px 0px;
+  }
+  .video-5 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+  .sinopsis-5 {
+    font-size: 100%;
+    margin: 5px 20px 30px 0px;
+  }
+  .logo-navbar {
+    width: 330px;
+  }
+  #formulario {
+    display: block;
+    margin: auto;
+  }
+  .item-1 {
+    width: auto;
+  }
+  .item-2 {
+    width: auto;
+  }
+  .item-3 {
+    width: auto;
+  }
+  .item-4 {
+    width: auto;
+  }
+  .item-5 {
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,14 +1,5 @@
-@font-face {
-    font-family: 'Quicksand';
-    src: url(./fuente/Quicksand-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: 'Rampart One';
-    src: url(./fuente/RampartOne-Regular.ttf) format('truetype');
-    font-style: normal;
-    font-weight: normal;
-  }
+@import 'colors';
+@import 'typefaces';
 
 * {
     margin: 0;
@@ -20,9 +11,9 @@
     font-family: 'Quicksand';
     text-align: center;
     margin: 0px 790px 0px 820px;
-    background-color: rgb(252, 198, 99);
+    background-color: $backround-color;
     border-radius: 15px;
-    border: 1px solid yellow;
+    border: 1px $border-color;
     padding: 10px
 }
 
@@ -34,7 +25,7 @@
 #SobreCatino {
     font-family: 'Quicksand';
     text-align: center;
-    background-color: rgb(252, 198, 99);
+    background-color: $backround-color;
     font-weight: bold ;
     display: grid;
     grid-template-areas: 
@@ -42,30 +33,45 @@
     '. catino .'
     ;
     grid-template-rows: 400px;
-}
-
-.catinos {
-    grid-area: catinos;
-}
-
-.catino {
-    grid-area: catino;
+    .catinos {
+        grid-area: catinos;
+    }
+    .catino {
+        grid-area: catino;
+    }    
 }
 
 body {
-    background-color: orange;
-}
-
-.container {
-  clear:both;
-  overflow:auto;
-  background-color: rgb(252, 198, 99);
-  border: 1px solid yellow;
-  border-radius: 10px;
+    background-color: $body-color;
+    .container {
+        clear:both;
+        overflow:auto;
+        background-color: $backround-color;
+        border: 1px $border-color;
+        border-radius: 10px;
+      }
 }
 
 nav {
     float: left;
+    ul li{
+        display: inline-block; 
+        padding: 10px;
+        font-size: 30px; 
+        font-family: rampart one;
+        margin-top: 55px;
+        padding-left: 50px;
+        &:hover {
+            color: $hover-color;
+        }
+        a {
+            text-decoration: solid;
+            color: $link-color;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+      }
 }
 
 .logo img {
@@ -75,39 +81,17 @@ nav {
     margin-top: -15px;
 }
 
-ul li{
-  display: inline-block; 
-  padding: 10px;
-  font-size: 30px; 
-  font-family: rampart one;
-  margin-top: 55px;
-  padding-left: 50px;
-}
-
-ul li:hover{
-  color:yellow;
-}
-
-a {
-    text-decoration: solid;
-    color: black;
-}
-
-a:hover {
-    color: yellow;
-}
-
 p {
     font-family: quicksand;
     font-weight: bold;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid yellow;
+    border: 1px $border-color;
     border-radius: 10px;
     margin: 5px;
     padding: 10px;
-    background-color: orange;
+    background-color: $body-color;
 }
 
 #padre-flex {
@@ -117,16 +101,21 @@ p {
     align-content: center;
     font-family: rampart one;
     margin-top: 30px;
-    background-color: rgb(252, 198, 99);
-    border: 1px solid yellow;
+    background-color: $backround-color;
+    border: 1px $border-color;
     border-radius: 10px;
+    .bordes-redondeados {
+        border-radius: 8px; border: 2px $border-color; 
+        width: 200px;
+        height: 315px;
+    }
 }
 
 #padre-flex-2 {
     font-family: rampart one;
     margin-top: 30px;
-    background-color: rgb(252, 198, 99);
-    border: 1px solid yellow;
+    background-color: $backround-color;
+    border: 1px $border-color;
     border-radius: 10px;
     padding: 15px;
     display: grid;
@@ -139,12 +128,93 @@ p {
     'video-5 sinopsis-5 sinopsis-5'
     ;
     grid-template-columns: 560px 920px 560px;
-}
-
-.bordes-redondeados {
-    border-radius: 8px; border: 2px solid black; 
-    width: 200px;
-    height: 315px;
+    h2 {
+        padding: 15px;
+    }
+    .anime {
+        grid-area: anime;
+        display: flex;
+        justify-content: center;
+    }
+    .video-1 {
+        grid-area: video-1;
+        width:560px; 
+        height: 315px;
+        border-radius: 8px; border: 5px $border-color; 
+    }
+    
+    .sinopsis-1 {
+        grid-area: sinopsis-1;
+        margin-left: 30px;
+        font-size: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .video-2 {
+        grid-area: video-2;
+        width:560px; 
+        height: 315px;
+        border-radius: 8px; border: 5px $border-color; 
+    }
+    
+    .sinopsis-2 {
+        grid-area: sinopsis-2;
+        margin-right: 30px;
+        font-size: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .video-3 {
+        grid-area: video-3;
+        width:560px; 
+        height: 315px;
+        border-radius: 8px; border: 5px $border-color; 
+    }
+    
+    .sinopsis-3 {
+        grid-area: sinopsis-3;
+        margin-left: 30px;
+        font-size: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .video-4 {
+        grid-area: video-4;
+        width:560px; 
+        height: 315px;
+        border-radius: 8px; border: 5px $border-color; 
+    }
+    
+    .sinopsis-4 {
+        grid-area: sinopsis-4;
+        margin-right: 30px;
+        font-size: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .video-5 {
+        grid-area: video-5;
+        width:560px; 
+        height: 315px;
+        border-radius: 8px; border: 5px $border-color; 
+    }
+    
+    .sinopsis-5 {
+        grid-area: sinopsis-5;
+        margin-left: 30px;
+        font-size: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #footer {
@@ -158,132 +228,48 @@ p {
     'item-5 item-5 item-5 item-5'
     ;
     grid-template-rows: 150px 80px 50px 50px;
-    border: 1px solid yellow;
+    border: 1px solid $border-color;
     border-radius: 10px;
-    background-color: rgb(252, 198, 99);
+    background-color: $backround-color;
     margin-top: 50px;
-}
-
-.item-1 {
-    grid-area: item-1;
-    justify-self: center;
-}
-
-.item-2 {
-    grid-area: item-2;
-    justify-self: center;
-}
-
-.item-3 {
-    grid-area: item-3;
-    justify-self: center;
-}
-
-.item-4 {
-    grid-area: item-4;
-    justify-self: center;
-}
-
-.item-5 {
-    grid-area: item-5;
-    justify-self: center;
+    a {
+        text-decoration: solid;
+        color: $link-color;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+    .item-1 {
+        grid-area: item-1;
+        justify-self: center;
+    }
+    
+    .item-2 {
+        grid-area: item-2;
+        justify-self: center;
+    }
+    
+    .item-3 {
+        grid-area: item-3;
+        justify-self: center;
+    }
+    
+    .item-4 {
+        grid-area: item-4;
+        justify-self: center;
+    }
+    
+    .item-5 {
+        grid-area: item-5;
+        justify-self: center;
+    }
 }
 
 .redes {
     margin: 10px;
     width: 50px;
-    border: 1px solid yellow;
+    border: 1px $border-color;
     border-radius: 15px;
-}
-
-h2 {
-    padding: 15px;
-}
-
-.video-1 {
-    grid-area: video-1;
-    width:560px; 
-    height: 315px;
-    border-radius: 8px; border: 5px solid yellow; 
-}
-
-.sinopsis-1 {
-    grid-area: sinopsis-1;
-    margin-left: 30px;
-    font-size: 25px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.video-2 {
-    grid-area: video-2;
-    width:560px; 
-    height: 315px;
-    border-radius: 8px; border: 5px solid yellow; 
-}
-
-.sinopsis-2 {
-    grid-area: sinopsis-2;
-    margin-right: 30px;
-    font-size: 25px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.video-3 {
-    grid-area: video-3;
-    width:560px; 
-    height: 315px;
-    border-radius: 8px; border: 5px solid yellow; 
-}
-
-.sinopsis-3 {
-    grid-area: sinopsis-3;
-    margin-left: 30px;
-    font-size: 25px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.video-4 {
-    grid-area: video-4;
-    width:560px; 
-    height: 315px;
-    border-radius: 8px; border: 5px solid yellow; 
-}
-
-.sinopsis-4 {
-    grid-area: sinopsis-4;
-    margin-right: 30px;
-    font-size: 25px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.video-5 {
-    grid-area: video-5;
-    width:560px; 
-    height: 315px;
-    border-radius: 8px; border: 5px solid yellow; 
-}
-
-.sinopsis-5 {
-    grid-area: sinopsis-5;
-    margin-left: 30px;
-    font-size: 25px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.anime {
-    grid-area: anime;
-    display: flex;
-    justify-content: center;
 }
 
 @media screen and (min-width: 300px) and (max-width: 1200px) {
