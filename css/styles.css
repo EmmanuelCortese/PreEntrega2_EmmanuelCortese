@@ -8,7 +8,6 @@
   font-style: normal;
   font-weight: normal;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -136,14 +135,14 @@ p {
   display: flex;
   justify-content: center;
 }
-#padre-flex-2 .video-1 {
+#padre-flex-2 .video-1, #padre-flex-2 .video-5, #padre-flex-2 .video-4, #padre-flex-2 .video-3, #padre-flex-2 .video-2 {
   grid-area: video-1;
   width: 560px;
   height: 315px;
   border-radius: 8px;
   border: 5px solid yellow;
 }
-#padre-flex-2 .sinopsis-1 {
+#padre-flex-2 .sinopsis-1, #padre-flex-2 .sinopsis-5, #padre-flex-2 .sinopsis-4, #padre-flex-2 .sinopsis-3, #padre-flex-2 .sinopsis-2 {
   grid-area: sinopsis-1;
   margin-left: 30px;
   font-size: 25px;
@@ -153,63 +152,27 @@ p {
 }
 #padre-flex-2 .video-2 {
   grid-area: video-2;
-  width: 560px;
-  height: 315px;
-  border-radius: 8px;
-  border: 5px solid yellow;
 }
 #padre-flex-2 .sinopsis-2 {
   grid-area: sinopsis-2;
-  margin-right: 30px;
-  font-size: 25px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 #padre-flex-2 .video-3 {
   grid-area: video-3;
-  width: 560px;
-  height: 315px;
-  border-radius: 8px;
-  border: 5px solid yellow;
 }
 #padre-flex-2 .sinopsis-3 {
   grid-area: sinopsis-3;
-  margin-left: 30px;
-  font-size: 25px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 #padre-flex-2 .video-4 {
   grid-area: video-4;
-  width: 560px;
-  height: 315px;
-  border-radius: 8px;
-  border: 5px solid yellow;
 }
 #padre-flex-2 .sinopsis-4 {
   grid-area: sinopsis-4;
-  margin-right: 30px;
-  font-size: 25px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 #padre-flex-2 .video-5 {
   grid-area: video-5;
-  width: 560px;
-  height: 315px;
-  border-radius: 8px;
-  border: 5px solid yellow;
 }
 #padre-flex-2 .sinopsis-5 {
   grid-area: sinopsis-5;
-  margin-left: 30px;
-  font-size: 25px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
 #footer {
@@ -321,13 +284,13 @@ p {
   #padre-flex-2 {
     display: block;
   }
-  .video-1 {
+  .video-1, #padre-flex-2 .video-2, #padre-flex-2 .video-3, #padre-flex-2 .video-4, #padre-flex-2 .video-5 {
     display: flex;
     flex-direction: column;
     width: auto;
     height: auto;
   }
-  .sinopsis-1 {
+  .sinopsis-1, #padre-flex-2 .sinopsis-2, #padre-flex-2 .sinopsis-3, #padre-flex-2 .sinopsis-4, #padre-flex-2 .sinopsis-5 {
     font-size: 100%;
     margin: 5px 20px 30px 0px;
   }

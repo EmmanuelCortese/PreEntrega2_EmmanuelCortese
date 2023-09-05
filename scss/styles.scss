@@ -154,66 +154,42 @@ p {
     
     .video-2 {
         grid-area: video-2;
-        width:560px; 
-        height: 315px;
-        border-radius: 8px; border: 5px $border-color; 
+        @extend .video-1
     }
     
     .sinopsis-2 {
         grid-area: sinopsis-2;
-        margin-right: 30px;
-        font-size: 25px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+        @extend .sinopsis-1
     }
     
     .video-3 {
         grid-area: video-3;
-        width:560px; 
-        height: 315px;
-        border-radius: 8px; border: 5px $border-color; 
+        @extend .video-1 
     }
     
     .sinopsis-3 {
         grid-area: sinopsis-3;
-        margin-left: 30px;
-        font-size: 25px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+        @extend .sinopsis-1
     }
     
     .video-4 {
         grid-area: video-4;
-        width:560px; 
-        height: 315px;
-        border-radius: 8px; border: 5px $border-color; 
+        @extend .video-1
     }
     
     .sinopsis-4 {
         grid-area: sinopsis-4;
-        margin-right: 30px;
-        font-size: 25px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+        @extend .sinopsis-1
     }
     
     .video-5 {
         grid-area: video-5;
-        width:560px; 
-        height: 315px;
-        border-radius: 8px; border: 5px $border-color; 
+        @extend .video-1 
     }
     
     .sinopsis-5 {
         grid-area: sinopsis-5;
-        margin-left: 30px;
-        font-size: 25px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+        @extend .sinopsis-1
     }
 }
 
